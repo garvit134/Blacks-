@@ -1,0 +1,137 @@
+/* Reset & base */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f3f9ff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  background: white;
+  max-width: 480px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+  padding: 25px;
+  text-align: center;
+}
+
+/* Header */
+
+header {
+  margin-bottom: 20px;
+}
+
+.profile-photo {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #007acc;
+  margin-bottom: 12px;
+  display: inline-block;
+}
+
+/* Info Section */
+
+.info p {
+  font-size: 16px;
+  margin: 6px 0;
+}
+
+a {
+  color: #007acc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Quote */
+
+.quote {
+  font-style: italic;
+  color: #333;
+  margin: 25px 0;
+  border-left: 5px solid #007acc;
+  padding-left: 12px;
+  font-size: 18px;
+}
+
+/* Form Section */
+
+.form-section {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.form-section h2 {
+  text-align: center;
+  color: #007acc;
+  margin-bottom: 12px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px 10px;
+  margin: 8px 0;
+  font-size: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  resize: vertical;
+  font-family: inherit;
+}
+
+textarea {
+  min-height: 80px;
+}
+
+button {
+  width: 100%;
+  background-color: #007acc;
+  border: none;
+  color: white;
+  padding: 14px 0;
+  font-size: 17px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #005f99;
+}
+
+/* Status message */
+
+#status {
+  margin-top: 12px;
+  font-weight: 600;
+  color: green;
+  text-align: center;
+}
+
+/* Responsive */
+
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+  .container {
+    padding: 20px;
+  }
+  .profile-photo {
+    width: 100px;
+    height: 100px;
+  }
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Garvit's Website</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="profile.jpg" alt="Garvit's Photo" class="profile-photo" />
+      <h1>Hello, I'm Garvit 👋</h1>
+    </header>
+
+    <section class="info">
+      <p><strong>Age:</strong> 15</p>
+      <p><strong>Phone:</strong> <a href="tel:9643796753">9643796753</a></p>
+      <p><strong>Hobby:</strong> I love playing chess ♟️</p>
+    </section>
+
+    <blockquote class="quote">
+      "In life, as in chess, forethought wins." – Charles Buxton
+    </blockquote>
+
+    <section class="form-section">
+      <h2>Contact Me</h2>
+      <form onsubmit="handleSubmit(event)">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <p id="status"></p>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
